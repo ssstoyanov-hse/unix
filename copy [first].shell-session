@@ -1,0 +1,5 @@
+stanislav@stanislav-laptop:~/Sandbox$ ln text3.txt newdir/text.txt
+stanislav@stanislav-laptop:~/Sandbox$ rm text3.txt
+
+stanislav@stanislav-laptop:~/Sandbox$ cat text.txt > text3.txt
+stanislav@stanislav-laptop:~/Sandbox$ rm text.txt
