@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#hw 2
+
 select=$1
 move="move"
 delete="delete"

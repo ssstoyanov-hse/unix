@@ -1,6 +1,8 @@
 #/bin/bash
 
 # Rock Paper Scissors
+#hw 3
+
 clear
 
 echo "Welcome to the rock-paper-scissors game"
