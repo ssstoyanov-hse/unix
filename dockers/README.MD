@@ -2,7 +2,7 @@
 
 1. Для начала создаем рабочую папку и файлы
 
-![image1](/image/image1.png)
+![image1](image/image1.png)
 
 #### Далее для упрощения работы я буду использовать IntelliJ IDEA с плагином для работы с докер файлами
 
@@ -64,24 +64,24 @@ server {
 
 Создаем новую конфигурацию
 
-![image2](/image/image2.gif)
+![image2](image/image2.gif)
 
 По итогу наша конфигурация для запуска будет выглядеть вот так
 
-![image3](/image/image3.png)
+![image3](image/image3.png)
 
 Запустим билд и проверим успешность сборки
 
-![image4](/image/image4.gif)
+![image4](image/image4.gif)
 
 Проверим контейнер через консоль
 
-![image5](/image/image5.png)
+![image5](image/image5.png)
 
 Проверим доступ в браузере
 
-![image6](/image/image6.png)
+![image6](image/image6.png)
 
 Проверим доступ через проводник
 
-![image7](/image/image7.png)
+![image7](image/image7.png)
