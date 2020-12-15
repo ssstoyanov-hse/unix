@@ -19,7 +19,7 @@ COPY nginx-d.conf /etc/nginx/sites-available/proxy
 RUN rm /etc/nginx/sites-enabled/default && ln -s /etc/nginx/sites-available/proxy /etc/nginx/sites-enabled/proxy && nginx -t
 
 # Пробрасивыаем порты
-EXPOSE 137 138 139 445 80
+EXPOSE 137 445 80
 
 # Запускаем samba и nginx
 CMD /etc/init.d/smbd start && nginx -g "daemon off;"
