@@ -1,10 +1,9 @@
 #!/bin/bash
 
-# создать скрипт, который генерирует си программу, которая генерирует скрипт, который генерирует си программу с хеллоу ворлд
 #hw 6
 
-mkdir temp
-cd temp
+# shellcheck disable=SC2164
+mkdir temp && cd temp
 
 touch main.c
 {

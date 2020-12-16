@@ -1,6 +1,5 @@
-#/bin/bash
+#!/bin/bash
 
-# Rock Paper Scissors
 #hw 3
 
 clear
@@ -18,6 +17,7 @@ while [[ true ]]; do
 
 	echo "1 - rock, 2 - paper, 3 - scissors, 0 - exit "
 	echo "Your choice: "
+	# shellcheck disable=SC2162
 	read input
 
 	re='^[0-9]+$'
@@ -38,6 +38,8 @@ while [[ true ]]; do
 		continue
 	fi
 
+	# shellcheck disable=SC2219
+	# shellcheck disable=SC2004
 	let chance=$(($RANDOM%100))
 
 	if [[ chance -le 56 ]]; then
@@ -54,11 +56,13 @@ while [[ true ]]; do
 		fi
 
 	else
+		# shellcheck disable=SC2219
 		let generate=$((($RANDOM)%3+1))
 
 		if [[ "$input" -eq "$generate"  ]]; then
 			echo -e "PC choice:\n$generate"
 			echo "Standoff"
+		# shellcheck disable=SC2166
 		elif [ "$input" -eq  1 -a "$generate" -eq 2 -o "$input" -eq 2 -a "$generate" -eq 3 -o "$input" -eq 3 -a  "$generate" -eq 1 ]; then
 			echo -e "PC choice:\n$generate"
 			echo "You win!"
